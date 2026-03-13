@@ -28,7 +28,7 @@ const cards =
 
 
 
-export default function ExclusiveSection() {
+export const ExclusiveSection = () => {
     return (
          <section className="bg-dark py-16">
             <div className="max-w-7xl mx-auto px-4">
