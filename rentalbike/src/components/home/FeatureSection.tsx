@@ -10,16 +10,19 @@ export const FeatureSection = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Experience the Côte d'Azur</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureItem
+            align='center'
             icon={MapPin}
             title="Strategic Locations"
             description="Located near the Promenade des Anglais, perfect starting point for all your adventures"
           />
           <FeatureItem
+            align='center'
             icon={Clock}
             title="Flexible Rentals"
             description="Half day, daily, or weekly rentals available"
           />
           <FeatureItem
+            align='center'
             icon={ShieldCheck}
             title="Premium Quality"
             description="Well-maintained bikes from leading brands. Safety equipment included"
