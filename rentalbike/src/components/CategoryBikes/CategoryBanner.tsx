@@ -22,7 +22,7 @@ export const CategoryBanner = ({ title, subtitle, badge, href, image, imageAlt }
           <h2 className="text-white text-xl font-semibold">{title}</h2>
           <p className="text-white/80 text-sm uppercase tracking-wider">{subtitle}</p>
         </div>
-        <span className="bg-brand text-dark text-sm font-medium px-3 py-1 rounded">
+        <span className="bg-bouticycle text-dark text-sm font-medium px-3 py-1 rounded">
           {badge}
         </span>
       </div>

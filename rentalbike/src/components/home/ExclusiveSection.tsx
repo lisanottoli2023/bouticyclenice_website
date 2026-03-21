@@ -33,7 +33,7 @@ export const ExclusiveSection = () => {
          <section className="bg-dark py-16">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-center mb-4">
-                    <span className="bg-brand text-black rounded-full px-3 py-1 text-sm font-semibold">
+                    <span className="bg-bouticycle text-black rounded-full px-3 py-1 text-sm font-semibold">
                         EXCLUSIVE WITH EVERY RENTAL
                     </span>
                 </div>

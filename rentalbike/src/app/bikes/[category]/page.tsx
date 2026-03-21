@@ -28,7 +28,7 @@ export default async function BikesCategoryPage({ params }: BikesCategoryPagePro
         <div className="container mx-auto px-4">
           <div className="mb-12">
             <h2 className="text-black text-6xl font-bold mb-6">EXPLORE</h2>
-            <h1 className="text-4xl font-bold text-black border-b-4 border-brand inline-block pb-2">
+            <h1 className="text-4xl font-bold text-black border-b-4 border-bouticycle inline-block pb-2">
               Our {name}
             </h1>
           </div>

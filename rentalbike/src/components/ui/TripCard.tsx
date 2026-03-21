@@ -24,7 +24,7 @@ export default function TripCard({
           fill
           className="object-cover"
         />
-        <span className="absolute top-3 right-3 bg-brand text-black rounded-full px-3 py-1 text-sm font-semibold">
+        <span className="absolute top-3 right-3 bg-bouticycle text-black rounded-full px-3 py-1 text-sm font-semibold">
           {badge}
         </span>
       </div>

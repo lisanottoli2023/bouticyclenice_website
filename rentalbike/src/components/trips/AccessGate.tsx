@@ -66,14 +66,14 @@ export const AccessGate = ({ children }: AccessGateProps) => {
             value={inputCode}
             onChange={(e) => setInputCode(e.target.value)}
             placeholder="Enter access code"
-            className="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder:text-white/50 outline-none focus:border-brand"
+            className="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder:text-white/50 outline-none focus:border-bouticycle"
             disabled={isLoading}
             required
           />
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full rounded-lg bg-brand text-dark font-semibold py-3 disabled:opacity-60"
+            className="w-full rounded-lg bg-bouticycle text-dark font-semibold py-3 disabled:opacity-60"
           >
             {isLoading ? 'Checking...' : 'Unlock Trips'}
           </button>

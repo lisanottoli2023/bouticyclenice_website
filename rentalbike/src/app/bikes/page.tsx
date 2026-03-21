@@ -63,7 +63,7 @@ export default function BikesCategoryPage() {
         <div className="flex flex-wrap gap-4 justify-center">
           {includes.map((item) => (
             <div key={item} className="flex items-center gap-2 bg-white/10 px-4 py-3 rounded-full">
-              <CheckCircle className="w-5 h-5 text-brand" />
+              <CheckCircle className="w-5 h-5 text-bouticycle" />
               <span className="text-white text-sm">{item}</span>
             </div>
           ))}

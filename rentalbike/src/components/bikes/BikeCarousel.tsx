@@ -48,7 +48,7 @@ export default function BikeCarousel({ images }: BikeCarouselProps) {
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
             className={`w-2 h-2 rounded-full transition-colors ${
-              index === selectedIndex ? 'bg-brand' : 'bg-dark'
+              index === selectedIndex ? 'bg-bouticycle' : 'bg-dark'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

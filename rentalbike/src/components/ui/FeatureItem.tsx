@@ -15,7 +15,7 @@ interface FeatureItemProps {
 export const FeatureItem = ({ icon: Icon, title, description, align }: FeatureItemProps) => {
   return (
     <div className={`flex flex-col ${alignClasses[align]} gap-3`}>
-      <div className="w-16 h-16 bg-brand rounded-full flex items-center justify-center">
+      <div className="w-16 h-16 bg-bouticycle rounded-full flex items-center justify-center">
         <Icon className="w-6 h-6 text-dark" />
       </div>
       <h3 className="text-dark text-lg font-semibold ">

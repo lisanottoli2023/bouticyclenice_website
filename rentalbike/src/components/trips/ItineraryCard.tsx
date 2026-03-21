@@ -49,7 +49,7 @@ export const ItineraryCard = ({ photo, imageAlt, title, description, distance, d
             <ul className="flex flex-col gap-1">
                 {bulletPoints.map((point, index) => (
             <li key={index} className="flex items-center gap-2 text-sm text-gray-600">
-            <span className="w-1.5 h-1.5 bg-brand rounded-full flex-shrink-0" />
+            <span className="w-1.5 h-1.5 bg-bouticycle rounded-full flex-shrink-0" />
             {point}
         </li>
             ))}
