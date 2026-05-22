@@ -19,6 +19,12 @@ const badgeColors = {
   hard: 'bg-red-500'
 }
 
+const difficultyLabels = {
+  easy: 'Facile',
+  moderate: 'Modéré',
+  hard: 'Difficile',
+}
+
 
 export const ItineraryCard = ({ photo, imageAlt, title, description, distance, duration, difficulty, bulletPoints }: ItineraryCardProps) => {
   return (
@@ -26,7 +32,7 @@ export const ItineraryCard = ({ photo, imageAlt, title, description, distance, d
       <div className="relative h-48">
         <Image src={photo} alt={imageAlt} fill className="object-cover" />
         <span className={`absolute top-3 right-3 text-xs font-semibold text-white px-2 py-1 rounded ${badgeColors[difficulty]}`}>
-            {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
+            {difficultyLabels[difficulty]}
             </span>
         </div>
         <div className="p-6 flex flex-col gap-3">
@@ -43,7 +49,7 @@ export const ItineraryCard = ({ photo, imageAlt, title, description, distance, d
                 </div>
                 <div className="flex items-center gap-1 text-sm text-gray-600">
                     <TrendingUp className="w-4 h-4 text-gray-400" />
-                    {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
+                    {difficultyLabels[difficulty]}
                 </div>
             </div>
             <ul className="flex flex-col gap-1">

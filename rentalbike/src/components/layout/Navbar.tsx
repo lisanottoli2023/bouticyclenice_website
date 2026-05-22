@@ -13,9 +13,9 @@ export const Navbar = () => {
   const isActive = (path: string) => pathname === path
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/bikes', label: 'Bikes' },
-    { href: '/trips', label: 'Trips' },
+    { href: '/', label: 'Accueil' },
+    { href: '/bikes', label: 'Vélos' },
+    { href: '/trips', label: 'Balades' },
   ]
 
   return (

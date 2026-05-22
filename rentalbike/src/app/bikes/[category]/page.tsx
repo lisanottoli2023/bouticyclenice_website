@@ -29,7 +29,7 @@ export default async function BikesCategoryPage({ params }: BikesCategoryPagePro
           <div className="mb-12">
             <h2 className="text-black text-6xl font-bold mb-6">EXPLORE</h2>
             <h1 className="text-4xl font-bold text-black border-b-4 border-bouticycle inline-block pb-2">
-              Our {name}
+              Nos {name}
             </h1>
           </div>
 
@@ -39,7 +39,7 @@ export default async function BikesCategoryPage({ params }: BikesCategoryPagePro
 
           <div className="flex justify-center">
             <Link href={RESERVATION_URL} target="_blank">
-                <Button variant="filled">Rent Now</Button>
+                <Button variant="filled">Réserver maintenant</Button>
             </Link>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default async function BikesCategoryPage({ params }: BikesCategoryPagePro
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left: Title, Description, Features */}
             <div>
-              <h2 className="text-black text-4xl font-bold mb-4">CHARACTERISTICS</h2>
+              <h2 className="text-black text-4xl font-bold mb-4">CARACTÉRISTIQUES</h2>
               <p className="text-black/80 text-lg leading-relaxed mb-8">
                 {description}
               </p>

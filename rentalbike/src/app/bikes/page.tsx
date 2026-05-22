@@ -4,44 +4,44 @@ import { CheckCircle } from "lucide-react";
 
 const categories = [
   {
-    title: "City Bikes",
-    subtitle: "PERFECT FOR URBAN COMMUTE",
-    badge: "From €18/day",
+    title: "Vélos de Ville",
+    subtitle: " Idéal pour les trajets quotidiens et les balades urbaines",
+    badge: "À partir de 18€/jour",
     href: "/bikes/city",
     image: "/images/city-bike.jpg",
-    imageAlt: "City Bike",
+    imageAlt: "Vélo de Ville",
   },
   {
-    title: "Road Bikes",
-    subtitle: "ENGINEERED FOR SPEED",
-    badge: "From €25/day",
+    title: "Vélos de Route",
+    subtitle: "Conçus pour la performance et les longues distances sur route",
+    badge: "À partir de 25€/jour",
     href: "/bikes/road",
     image: "/images/road-bike.jpg",
-    imageAlt: "Road Bike",
+    imageAlt: "Vélo de Route",
   },
   {
-    title: "Mountain Bikes",
-    subtitle: "OFF-ROAD ADVENTURE",
-    badge: "From €30/day",
+    title: "VTT",
+    subtitle: "Parfaits pour les aventures tout-terrain et les sentiers escarpés",
+    badge: "À partir de 30€/jour",
     href: "/bikes/mountain",
     image: "/images/mountain-bike.jpg",
-    imageAlt: "Mountain Bike",
+    imageAlt: "VTT",
   },
   {
-    title: "Cargo Bikes",
-    subtitle: "HAUL ANYTHING WITH EASE",
-    badge: "From €35/day",
+    title: "Vélos Cargo",
+    subtitle: "Idéal pour une balade en famille ou faire du shopping en ville",
+    badge: "À partir de 35€/jour",
     href: "/bikes/cargo",
     image: "/images/cargo-bike.jpg",
-    imageAlt: "Cargo Bike",
+    imageAlt: "Vélo Cargo",
   },
 ];
 
 const includes = [
-  'Helmet & safety gear',
-  'Lock & repair kit',
-  'Secret route maps',
-  '24/7 assistance',
+  'Casque & équipement de sécurité',
+  'Antivol & kit de réparation',
+  'Cartes d\'itinéraires secrets',
+  'Assistance',
 ];
 
 export default function BikesCategoryPage() {
@@ -49,7 +49,7 @@ export default function BikesCategoryPage() {
     <main className="bg-dark min-h-screen">
     <div className="container mx-auto px-4 py-8">
       <div className="py-12 px-4 mb-8">
-        <h1 className="text-white text-3xl font-bold">Explore the city on two wheels</h1>
+        <h1 className="text-white text-3xl font-bold">Explorez la ville à deux roues</h1>
     </div>
       <div className="flex flex-col gap-4">
         {categories.map((category) => (
@@ -59,7 +59,7 @@ export default function BikesCategoryPage() {
       <section className=" relative bg-gradient-to-br from-zinc-800 to-zinc-800/90 overflow-hidden px-4 py-8 mt-8">
         <div className="w-64 h-64 right-1/4 top-0 absolute bg-yellow-300/10 rounded-full blur-3xl"/>
         <div className="w-64 h-64 left-1/4 top-0 absolute bg-yellow-300/5 rounded-full blur-3xl"/>
-        <h2 className="text-white text-center text-lg font-semibold mb-4 ">Every rental includes</h2>
+        <h2 className="text-white text-center text-lg font-semibold mb-4 ">Chaque location comprend</h2>
         <div className="flex flex-wrap gap-4 justify-center">
           {includes.map((item) => (
             <div key={item} className="flex items-center gap-2 bg-white/10 px-4 py-3 rounded-full">

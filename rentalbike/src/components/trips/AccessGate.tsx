@@ -32,10 +32,10 @@ export const AccessGate = ({ children }: AccessGateProps) => {
       if (data.valid) {
         setIsUnlocked(true)
       } else {
-        setError('Invalid access code. Please try again.')
+        setError('Code d\'accès invalide. Veuillez réessayer.')
       }
     } catch {
-      setError('Something went wrong. Please try again.')
+      setError('Une erreur s\'est produite. Veuillez réessayer.')
     } finally {
       setIsLoading(false)
     }
@@ -54,9 +54,9 @@ export const AccessGate = ({ children }: AccessGateProps) => {
             height={56}
             className="mb-3"
           />
-          <h1 className="text-white text-2xl font-semibold text-center">Private Access</h1>
+          <h1 className="text-white text-2xl font-semibold text-center">Accès Privé</h1>
           <p className="text-white/80 text-sm text-center mt-2">
-            Enter your booking code to unlock exclusive trips.
+            Entrez votre code de réservation pour accéder aux balades exclusives.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export const AccessGate = ({ children }: AccessGateProps) => {
             type="text"
             value={inputCode}
             onChange={(e) => setInputCode(e.target.value)}
-            placeholder="Enter access code"
+            placeholder="Entrez le code d'accès"
             className="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder:text-white/50 outline-none focus:border-bouticycle"
             disabled={isLoading}
             required
@@ -75,7 +75,7 @@ export const AccessGate = ({ children }: AccessGateProps) => {
             disabled={isLoading}
             className="w-full rounded-lg bg-bouticycle text-dark font-semibold py-3 disabled:opacity-60"
           >
-            {isLoading ? 'Checking...' : 'Unlock Trips'}
+            {isLoading ? 'Vérification...' : 'Débloquer les Balades'}
           </button>
         </form>
 

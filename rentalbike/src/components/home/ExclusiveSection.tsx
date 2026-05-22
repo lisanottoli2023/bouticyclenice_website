@@ -1,28 +1,28 @@
 import TripCard from '@/components/ui/TripCard'
 import { Button } from '@/components/ui/Button'
 
-const cards = 
+const cards =
 [
 {
     image: "/images/hidden-viewpoints.jpg",
-    imageAlt: "Hidden Viewpoints",
-    badge: "12 Secret Spots",
-    title: "Hidden Viewpoints",
-    description: "Panoramic spots away from tourist crowds where locals watch the sunset over the Mediterranean"
+    imageAlt: "Points de Vue Cachés",
+    badge: "12 Spots Secrets",
+    title: "Points de Vue Cachés",
+    description: "Des panoramas loin des foules touristiques où les Niçois regardent le coucher de soleil sur la Méditerranée"
   },
   {
     image: "/images/sunset-rides.jpg",
-    imageAlt: "Sunset Rides",
-    badge: "18 Authentic Places",
-    title: "Authentic Cafés & Restaurants",
-    description: "Family-owned spots where locals actually eat—real socca, fresh pissaladière, not tourist traps"
+    imageAlt: "Balades au Coucher du Soleil",
+    badge: "18 Lieux Authentiques",
+    title: "Cafés & Restaurants Authentiques",
+    description: "Des adresses de quartier où mangent vraiment les Niçois — vraie socca, pissaladière fraîche, sans pièges à touristes"
   },
   {
     image: "/images/city-lights.jpg",
-    imageAlt: "City Lights",
-    badge: "25+ Routes",
-    title: "Curated Secret Routes",
-    description: "Quiet backstreets, coastal paths, and scenic routes only locals use—mapped turn-by-turn"
+    imageAlt: "Lumières de la Ville",
+    badge: "25+ Itinéraires",
+    title: "Itinéraires Secrets Sélectionnés",
+    description: "Ruelles tranquilles, chemins côtiers et routes panoramiques que seuls les locaux empruntent — cartographiés virage par virage"
   }
 ]
 
@@ -34,14 +34,14 @@ export const ExclusiveSection = () => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-center mb-4">
                     <span className="bg-bouticycle text-black rounded-full px-3 py-1 text-sm font-semibold">
-                        EXCLUSIVE WITH EVERY RENTAL
+                        INCLUS AVEC CHAQUE LOCATION
                     </span>
                 </div>
                 <p className="text-white text-center text-3xl font-bold mb-4">
-                    Your Secret Access to the Real Côte d'Azur
+                    Votre Accès Privilégié à la Vraie Côte d'Azur
                 </p>
                 <p className="text-white/80 text-center text-lg mb-12">
-                    We don't just rent bikes—we unlock the hidden treasures of Nice that only locals know about. Every rental includes our expertly curated insider guides with secret routes, viewpoints, and authentic spots.
+                    Nous ne louons pas seulement des vélos, nous vous ouvrons les portes des trésors cachés de Nice que seuls les locaux connaissent. Chaque location inclut nos guides insider soigneusement sélectionnés avec itinéraires secrets, points de vue et adresses authentiques.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                     {cards.map((card, index) => (
@@ -56,11 +56,11 @@ export const ExclusiveSection = () => {
                     ))}
                 </div>
                 <p className="text-white/80 text-center text-sm mb-6">
-                    Our guides are crafted by local experts and updated regularly to ensure you always have the latest insider tips.
+                    Nos guides sont créés par des experts locaux et mis à jour régulièrement pour vous garantir les derniers bons plans.
                 </p>
                 <div className="flex justify-center">
                     <Button variant="filled" size="lg" withArrow>
-                        Explore our Secret Routes
+                        Découvrir nos Itinéraires Secrets
                     </Button>
                 </div>
             </div>
