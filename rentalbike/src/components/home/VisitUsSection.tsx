@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { MapPin, Clock, Phone } from 'lucide-react'
 import { PHONE_NUMBER, ADDRESS_LINE1, ADDRESS_LINE2, OPENING_HOURS, OPENING_HOURS_DETAIL } from '@/lib/constants'
 import { InfoCard } from '@/components/ui/InfoCard'
+import shopImage from '@/images/bouticycle-nice.jpg'
 
 export const VisitUsSection = () => {
   return (
@@ -11,7 +12,7 @@ export const VisitUsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="relative w-full h-96">
             <Image
-              src="/images/shop.jpg"
+              src={shopImage}
               alt="Bouticycle Nice Shop"
               fill
               className="object-cover rounded-xl"

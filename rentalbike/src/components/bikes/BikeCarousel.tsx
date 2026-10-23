@@ -44,9 +44,11 @@ export default function BikeCarousel({ images }: BikeCarouselProps) {
       {/* Navigation Dots */}
       <div className="flex justify-center gap-2 mt-4">
         {images.map((_, index) => (
-          <button
+          <a
             key={index}
-            onClick={() => emblaApi?.scrollTo(index)}
+            href="https://www.lokki.rent/loueur/bouticycle?verticalCategoryIds=6478b46dc8cb350024a332fa"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`w-2 h-2 rounded-full transition-colors ${
               index === selectedIndex ? 'bg-bouticycle' : 'bg-dark'
             }`}
